@@ -36,19 +36,19 @@ public class EtchASketch extends Canvas {
         if (e.getID() == KeyEvent.KEY_PRESSED) {
             if (e.getKeyCode() == KeyEvent.VK_UP) {
                 cur = Color.blue;
-                y -= 5;
+                y -= 10;
             }
             if (e.getKeyCode() == KeyEvent.VK_DOWN) {
                 cur = Color.green;
-                y += 5;
+                y += 10;
             }
             if (e.getKeyCode() == KeyEvent.VK_LEFT) {
                 cur = Color.red;
-                x -= 5;
+                x -= 10;
             }
             if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
                 cur = Color.orange;
-                x += 5;
+                x += 10;
             }
             // and we manually call paint() again to redraw
             repaint();
